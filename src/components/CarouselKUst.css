@@ -1,0 +1,32 @@
+/*.css */
+.carousel .control-arrow, .carousel.carousel-slider .control-arrow {
+    background: none;
+    border: none;
+    opacity: 1;
+    filter: none;
+    transition: all 0.3s ease;
+  }
+  
+  .carousel .control-arrow:hover, .carousel.carousel-slider .control-arrow:hover {
+    background: rgba(255, 255, 255, 0.5);  /* White light effect */
+    transform: scale(1.2); /* Increase button size */
+  }
+  
+  .carousel .control-arrow:before, .carousel.carousel-slider .control-arrow:before {
+    border: none; /* Remove the default triangle icon */
+    content: ''; /* Remove the content of the default triangle icon */
+    display: block;
+    width: 24px; /* Increase the size of the button */
+    height: 24px; /* Increase the size of the button */
+    background: white; /* White light effect */
+    border-radius: 50%;
+  }
+  
+  .carousel .control-prev.control-arrow:before {
+    background: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6" /></svg>') no-repeat center center;
+  }
+  
+  .carousel .control-next.control-arrow:before {
+    background: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24"><path d="M9 18l6-6-6-6" /></svg>') no-repeat center center;
+  }
+  
